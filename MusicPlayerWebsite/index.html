@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMusic
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/97e3a1e48d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-space">
+            <input type="range" value="0" id="volume-change">
+            <h2 class="song-name"></h2>
+            <p class="artis"></p>
+            <img src="" alt="" class="music-img">
+            <audio id="song">
+                <source src="" type="audio/flac">
+            </audio>
+            <div class="function">
+                <div class="progress-bar">
+                    <p class="nowtime">00:00</p>
+                    <input type="range" value="0" id="progress">
+                    <p class="fulltime">00:00</p>
+                </div>
+                <div class="control-button">
+                    <div class="loop"><i class="fa fa-repeat" aria-hidden="true"></i></div>
+                    <div class="backward"><i class="fa-solid fa-backward"></i></div>
+                    <div class="play"><i class="fa-solid fa-play"></i></div>
+                    <div class="forward"><i class="fa-solid fa-forward"></i></div>
+                    <div class="volume"><i class="fa-solid fa-volume-high"></i></div>
+                </div>           
+            </div>
+        </div>
+        <div class="playlist-space">
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Search here...">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="music-list"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
